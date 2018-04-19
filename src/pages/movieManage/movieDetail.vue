@@ -104,7 +104,8 @@
 <script>
   import {
     GET_MOVIEDETAIL,
-    SUCCESS_CODE
+    SUCCESS_CODE,
+    BASE_URL
   } from 'src/constsAlias';
   import PhotoSwipe from 'src/components/plugin/PhotoSwipe.vue'
   import StarBar from 'src/components/plugin/StarBar.vue'
@@ -117,7 +118,7 @@
     },
     computed: {
       baseUrl () {
-        return 'http://localhost:3000/agent?url='
+        return `${BASE_URL}agent?url=`
       },
       stagePhotoList () {
         let stagePhotoList = []

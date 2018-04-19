@@ -2,7 +2,8 @@ import Vue from 'vue';
 import VueResource from 'vue-resource';
 import {
   SUCCESS_CODE,
-  INVALID_CODE
+  INVALID_CODE,
+  BASE_URL
 } from 'src/constsAlias';
 import store from './store';
 
@@ -11,10 +12,10 @@ Vue.use(VueResource);
 Vue.http.options.credentials = true;
 if (process.env.NODE_ENV === 'development') {
   Vue.config.devtools = true;
-  Vue.http.options.root = 'http://localhost:3000/admin/v0/';
-} else if (process.env.NODE_ENV === 'production'){
-  // Vue.http.options.root = '正式环境';
 }
+
+Vue.http.options.root = `${BASE_URL}admin/v0/`;
+Vue.http.options.timeout = 5000;
 
 Vue.http.interceptors.push((request, next) => {
   request.headers.set('Authorization', 'Bearer ' + store.state.token);

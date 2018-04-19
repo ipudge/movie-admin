@@ -2,6 +2,14 @@
  * Created by demo on 2017/4/14.
  */
 // api const
+let url = ''
+if (process.env.NODE_ENV === 'development') {
+  url = 'http://localhost:3000/';
+} else if (process.env.NODE_ENV === 'production'){
+  url = 'http://movie-api.ipudge.cn/';
+}
+
+export const BASE_URL = url;
 export const LOGIN_API = 'public/login'; //登录
 export const LOGOUT_API = 'public/logout'; //注销
 
@@ -16,7 +24,7 @@ export const UPDATE_CATEGORYSORT = 'category/sort';//修改排序
 
 //code
 export const SUCCESS_CODE = 200;  //成功code
-export const INVALID_CODE = 401;  //失败
+export const INVALID_CODE = 401;  //token失效
 
 
 
