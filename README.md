@@ -1,21 +1,26 @@
-#开始
+# start
 
     cd movie-admin
     npm i --registry=https://registry.npm.taobao.org
     npm run dev
-    
-#demo
 
-  [demo](http://movie-admin.ipudge.cn/#/movieManage)  
-  
+# intro
+
+    跟着imooc scott 老师的课程走下来的，爬取豆瓣即将上映的电影的后台管理部分，互相学习
     
-#资料
+# demo
+
+  [demo](http://movie-admin.ipudge.cn/#/movieManage) (爬虫后台前台)
+  
+  [爬虫代码](https://github.com/ipudge/douban-trailer-backend) (爬虫后台服务)
+    
+# source
   
   [imooc实站](https://coding.imooc.com/learn/list/178.html)  (后台是基于react，我基于vue写的)
   
   [vue-element-admin](https://github.com/PanJiaChen/vue-element-admin) 
   
-#最后
+# last
 
-  cndota best dota    
+  ## cndota best dota    
     
