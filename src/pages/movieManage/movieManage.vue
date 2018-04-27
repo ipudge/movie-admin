@@ -122,7 +122,7 @@
     DELETE_MOVIE,
     GET_MOVIETYPES,
     SUCCESS_CODE
-  } from 'src/constsAlias';
+  } from '@/constsAlias';
 
   export default {
     created() {

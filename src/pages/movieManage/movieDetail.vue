@@ -106,9 +106,9 @@
     GET_MOVIEDETAIL,
     SUCCESS_CODE,
     BASE_URL
-  } from 'src/constsAlias';
-  import PhotoSwipe from 'src/components/plugin/PhotoSwipe.vue'
-  import StarBar from 'src/components/plugin/StarBar.vue'
+  } from '@/constsAlias';
+  import PhotoSwipe from '@/components/plugin/PhotoSwipe.vue'
+  import StarBar from '@/components/plugin/StarBar.vue'
   import 'video.js/dist/video-js.min.css'
   import videoJs from 'video.js'
 

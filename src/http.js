@@ -4,7 +4,7 @@ import {
   SUCCESS_CODE,
   INVALID_CODE,
   BASE_URL
-} from 'src/constsAlias';
+} from '@/constsAlias';
 import store from './store';
 
 Vue.use(VueResource);

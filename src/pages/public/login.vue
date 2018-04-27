@@ -33,7 +33,7 @@
   import {
     LOGIN_API,
     SUCCESS_CODE
-  } from 'src/constsAlias';
+  } from '@/constsAlias';
 
   export default {
     computed: {

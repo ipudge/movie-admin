@@ -30,7 +30,7 @@
     GET_MOVIETYPES,
     UPDATE_CATEGORYSORT,
     SUCCESS_CODE
-  } from 'src/constsAlias';
+  } from '@/constsAlias';
   import draggable from 'vuedraggable'
   import _ from 'lodash'
 

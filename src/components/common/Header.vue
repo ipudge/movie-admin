@@ -22,11 +22,11 @@
   import {
     LOGOUT_API,
     SUCCESS_CODE
-  } from 'src/constsAlias';
+  } from '@/constsAlias';
   import _ from 'lodash';
   import {mapMutations, mapGetters} from 'vuex';
-  import Screenfull from 'components/plugin/Screenfull';
-  import Hamburger from 'components/plugin/Hamburger'
+  import Screenfull from '@/components/plugin/Screenfull';
+  import Hamburger from '@/components/plugin/Hamburger'
 
   export default {
     data() {

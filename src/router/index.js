@@ -11,33 +11,33 @@ let router = new Router({
   routes: [
     {
       path: '/',
-      component: resolve => require(['src/components/common/Home.vue'], resolve),
+      component: resolve => require(['@/components/common/Home.vue'], resolve),
       redirect: '/index',
       children: [
         {
           path: 'movieManage',
-          component: resolve => require(['src/pages/movieManage/movieManage.vue'], resolve),
+          component: resolve => require(['@/pages/movieManage/movieManage.vue'], resolve),
           meta: {loginRequired: true}
         },
         {
           path: 'movies/:id',
-          component: resolve => require(['src/pages/movieManage/movieDetail.vue'], resolve),
+          component: resolve => require(['@/pages/movieManage/movieDetail.vue'], resolve),
           meta: {loginRequired: true}
         },
         {
           path: 'categoryManage',
-          component: resolve => require(['src/pages/categoryManage/categoryManage.vue'], resolve),
+          component: resolve => require(['@/pages/categoryManage/categoryManage.vue'], resolve),
           meta: {loginRequired: true}
         }
       ]
     },
     {
       path: '/',
-      component: resolve => require(['src/components/common/Bg.vue'], resolve),
+      component: resolve => require(['@/components/common/Bg.vue'], resolve),
       children: [
         {
           path: '/login',
-          component: resolve => require(['src/pages/public/login.vue'], resolve)
+          component: resolve => require(['@/pages/public/login.vue'], resolve)
         }
       ]
     },

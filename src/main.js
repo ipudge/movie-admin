@@ -8,8 +8,8 @@ import "../static/css/main.css";
 import './http';
 import store from './store';
 import './icons';
-import 'directive/waves/waves.css';
-import 'directive/waves'
+import '@/directive/waves/waves.css';
+import '@/directive/waves'
 import "babel-polyfill";
 import VueLazyload from 'vue-lazyload'
 

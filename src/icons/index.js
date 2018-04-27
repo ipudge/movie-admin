@@ -1,5 +1,5 @@
 import Vue from 'vue'
-import SvgIcon from 'src/components/plugin/SvgIcon'// svg组件
+import SvgIcon from '@/components/plugin/SvgIcon'// svg组件
 
 // register globally
 Vue.component('svg-icon', SvgIcon)
