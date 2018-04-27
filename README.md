@@ -3,6 +3,9 @@
     cd movie-admin
     npm i --registry=https://registry.npm.taobao.org
     npm run dev
+    
+    user: 357812113@qq.com
+    pwd: 123
 
 # intro
 
